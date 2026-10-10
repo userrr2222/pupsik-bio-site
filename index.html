@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="pupsik33678 — персональная визитка, setup, ссылки и музыка."
+    />
+    <title>★ pupsik33678 ★</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=JetBrains+Mono:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="bg-blur bg-blur-one"></div>
+    <div class="bg-blur bg-blur-two"></div>
+
+    <div class="lang-modal" id="langModal" aria-live="polite">
+      <div class="lang-card">
+        <p class="lang-title">SELECT LANGUAGE / ВЫБЕРИТЕ ЯЗЫК</p>
+        <div class="lang-btns">
+          <button class="lang-btn" type="button" data-lang="ru">РУССКИЙ</button>
+          <button class="lang-btn" type="button" data-lang="en">ENGLISH</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="welcome-screen" id="welcomeScreen" aria-live="polite">
+      <div class="welcome-text" id="welcomeText">WELCOME</div>
+    </div>
+
+    <main class="main-content" id="mainContent">
+      <header class="profile-header">
+        <div class="avatar-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=300&auto=format&fit=crop"
+            alt="pupsik33678 avatar"
+            class="avatar-img"
+          />
+        </div>
+        <h1 class="username">pupsik33678</h1>
+        <span class="status-badge">vibecoding &amp; gaming</span>
+      </header>
+
+      <section class="spotify-card" aria-label="Spotify player">
+        <iframe
+          title="Spotify track"
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/3MzOnLzUI7pnQPSkZrUvve?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <nav class="links-grid" aria-label="Quick links">
+        <a href="https://tiktok.com/@misaatecgtl" target="_blank" rel="noreferrer" class="link-item">
+          TikTok <span>↗</span>
+        </a>
+        <a href="https://www.roblox.com/users/2249999768/profile" target="_blank" rel="noreferrer" class="link-item">
+          Roblox <span>↗</span>
+        </a>
+        <a href="https://funpay.com/uk/users/15707681/" target="_blank" rel="noreferrer" class="link-item">
+          FunPay <span>↗</span>
+        </a>
+        <button class="link-item copy-button" type="button" data-copy="pupsik33678" aria-label="Copy Discord username">
+          <span>Discord</span>
+          <span class="copy-value">pupsik33678</span>
+        </button>
+      </nav>
+
+      <section class="hobbies-section" aria-labelledby="hobbiesLabel">
+        <p class="section-label" id="hobbiesLabel">Чем занимаюсь</p>
+        <div class="hobby-tags">
+          <span class="hobby-tag">💻 Вайбкодинг</span>
+          <span class="hobby-tag">🎮 Roblox &amp; Rust</span>
+          <span class="hobby-tag">⛏️ Minecraft</span>
+          <span class="hobby-tag">⚡ Y2K / Underground</span>
+        </div>
+      </section>
+
+      <section class="setup-section" aria-labelledby="setupTitle">
+        <h2 class="setup-header-title" id="setupTitle">мой сетап.</h2>
+        <p class="setup-sub" id="setupSub">железо, на котором всё это пишется.</p>
+
+        <div class="setup-card">
+          <div class="setup-row">
+            <div class="setup-left">
+              <div class="setup-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"></path>
+                </svg>
+              </div>
+              <span class="setup-name" id="labelCpu">Процессор</span>
+            </div>
+            <div>
+              <div class="setup-val">Intel Core i5-11400H</div>
+              <div class="setup-badge">11th Gen</div>
+            </div>
+          </div>
+
+          <div class="setup-row">
+            <div class="setup-left">
+              <div class="setup-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                  <circle cx="7" cy="12" r="2"></circle>
+                  <circle cx="17" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <span class="setup-name" id="labelGpu">Видеокарта</span>
+            </div>
+            <div>
+              <div class="setup-val">NVIDIA GeForce RTX 3060 Ti</div>
+            </div>
+          </div>
+
+          <div class="setup-row">
+            <div class="setup-left">
+              <div class="setup-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M2 8h20v8H2zM6 11v2M10 11v2M14 11v2M18 11v2"></path>
+                </svg>
+              </div>
+              <span class="setup-name" id="labelRam">Память</span>
+            </div>
+            <div>
+              <div class="setup-val">16 GB RAM</div>
+            </div>
+          </div>
+
+          <div class="setup-row">
+            <div class="setup-left">
+              <div class="setup-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="6" width="18" height="12" rx="2"></rect>
+                  <path d="M7 12h.01M17 12h.01"></path>
+                </svg>
+              </div>
+              <span class="setup-name" id="labelSsd">Накопитель</span>
+            </div>
+            <div>
+              <div class="setup-val">512 GB SSD</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
